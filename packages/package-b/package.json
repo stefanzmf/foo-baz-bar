@@ -1,0 +1,24 @@
+{
+  "name": "@foo-baz-bar/package-b",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "node_modules/.bin/babel src --out-dir lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.0",
+    "@babel/core": "^7.10.0",
+    "@babel/preset-react": "^7.10.0"
+  },
+  "babel": {
+    "presets": ["@babel/preset-react"]
+  }
+}
